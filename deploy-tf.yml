@@ -1,0 +1,77 @@
+trigger:
+- none
+
+name: Deploy Terraform
+
+variables:
+- name: serviceConnection
+  value: "az-dev-subscription(893074bb-19ef-4865-bfe6-11979c84203a)"
+- name: location
+  value: "westeurope"
+- name: deploymentStorageResourceGroupName
+  value: "infra"
+- name: deploymentStorageAccountName
+  value: "tfstatekiril"
+- name: deploymentStorageAccountSku
+  value: "Standard_RAGRS"
+- name: terraformStatesContainerName
+  value: "tfstate"
+- name: pathTf
+  value: "$(Build.SourcesDirectory)/terraform/deploy-infra"
+- name: terraformVersion
+  value: "latest"
+
+steps: 
+
+- task: tfsec@1
+  inputs:
+    dir: $(Build.SourcesDirectory)/terraform/deploy-infra
+    publishTestResults: false
+    args: --soft-fail
+
+- task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@0
+  displayName: "Use Terraform $(terraformVersion)"
+  inputs:
+    terraformVersion: $(terraformVersion)
+
+
+- task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
+  displayName: "terraform init"
+  inputs:
+    command: init
+    backendType: azurerm
+    backendServiceArm: $(serviceConnection)
+    ensureBackend: true
+    backendAzureRmResourceGroupLocation: $(location)
+    backendAzureRmResourceGroupName: $(deploymentStorageResourceGroupName)
+    backendAzureRmStorageAccountName: $(deploymentStorageAccountName)
+    backendAzureRmStorageAccountSku: $(deploymentStorageAccountSku)
+    backendAzureRmContainerName: $(terraformStatesContainerName)
+    backendAzureRmKey: 'tfstate'
+    workingDirectory: $(pathTf)
+
+- task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
+  displayName: "terraform validate"
+  inputs:
+    workingDirectory: $(pathTf)
+
+- task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
+  displayName: "terraform plan"
+  inputs:
+    command: plan
+    environmentServiceName: $(serviceConnection)
+    workingDirectory: $(pathTf)
+    commandOptions: >
+      -var-file=$(Build.SourcesDirectory)/terraform/deploy-infra/vars.tfvars
+      -lock=false
+
+- task: charleszipp.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-cli.TerraformCLI@0
+  displayName: "terraform apply"
+  inputs:
+    command: apply
+    environmentServiceName: $(serviceConnection)
+    workingDirectory: $(pathTf)
+    commandOptions: >
+      -auto-approve
+      -var-file=$(Build.SourcesDirectory)/terraform/deploy-infra/vars.tfvars
+      -lock=false

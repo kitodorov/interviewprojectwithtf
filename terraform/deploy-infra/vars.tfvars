@@ -1,0 +1,5 @@
+rg = "terraform"
+pwd = "H@Sh1CoR3!"
+env = "dev"
+prj = "exampleintegration"
+prjcode = "teva"
