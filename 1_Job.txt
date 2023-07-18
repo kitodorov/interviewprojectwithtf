@@ -62,28 +62,20 @@
 2023-07-18T09:18:00.2071276Z hint: 
 2023-07-18T09:18:00.2071455Z hint: 	git branch -m <name>
 2023-07-18T09:18:00.2101705Z Initialized empty Git repository in /home/vsts/work/1/s/.git/
-2023-07-18T09:18:00.2124139Z ##[command]git remote add origin https://kiriltodorov0758@dev.azure.com/kiriltodorov0758/Learning%AZP2520Project%AZP2520v2/_git/Terraform
 2023-07-18T09:18:00.2182357Z ##[command]git config gc.auto 0
-2023-07-18T09:18:00.2216894Z ##[command]git config --get-all http.https://kiriltodorov0758@dev.azure.com/kiriltodorov0758/Learning%AZP2520Project%AZP2520v2/_git/Terraform.extraheader
 2023-07-18T09:18:00.2394000Z ##[command]git config --get-all http.extraheader
 2023-07-18T09:18:00.2486029Z ##[command]git config --get-regexp .*extraheader
 2023-07-18T09:18:00.2493598Z ##[command]git config --get-all http.proxy
 2023-07-18T09:18:00.2501354Z ##[command]git config http.version HTTP/1.1
-2023-07-18T09:18:00.2661610Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +7195b67e058eb9655439ffcc5918a83dacc895e0:refs/remotes/origin/7195b67e058eb9655439ffcc5918a83dacc895e0
 2023-07-18T09:18:00.5710553Z remote: Azure Repos        
 2023-07-18T09:18:00.5711442Z remote: 
 2023-07-18T09:18:00.5712227Z remote: Found 15 objects to send. (18 ms)        
-2023-07-18T09:18:00.5718044Z From https://dev.azure.com/kiriltodorov0758/Learning%20Project%20v2/_git/Terraform
 2023-07-18T09:18:00.5719056Z  * [new ref]         7195b67e058eb9655439ffcc5918a83dacc895e0 -> origin/7195b67e058eb9655439ffcc5918a83dacc895e0
 2023-07-18T09:18:00.6286536Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +7195b67e058eb9655439ffcc5918a83dacc895e0
 2023-07-18T09:18:00.8056657Z remote: Azure Repos        
 2023-07-18T09:18:00.8217799Z remote: 
 2023-07-18T09:18:00.8218020Z remote: Found 0 objects to send. (9 ms)        
-2023-07-18T09:18:00.8351290Z From https://dev.azure.com/kiriltodorov0758/Learning%20Project%20v2/_git/Terraform
-2023-07-18T09:18:00.8353273Z  * branch            7195b67e058eb9655439ffcc5918a83dacc895e0 -> FETCH_HEAD
-2023-07-18T09:18:00.8799913Z ##[command]git checkout --progress --force refs/remotes/origin/7195b67e058eb9655439ffcc5918a83dacc895e0
-2023-07-18T09:18:00.8803245Z Note: switching to 'refs/remotes/origin/7195b67e058eb9655439ffcc5918a83dacc895e0'.
-2023-07-18T09:18:00.8803354Z 
+2023-07-18T09:18:00.8353273Z  * branch            7195b67e058eb9655439ffcc5918a83dacc895e0 -> FETCH_HEAD2023-07-18T09:18:00.8803354Z 
 2023-07-18T09:18:00.8803684Z You are in 'detached HEAD' state. You can look around, make experimental
 2023-07-18T09:18:00.8803911Z changes and commit them, and you can discard any commits you make in this
 2023-07-18T09:18:00.8804122Z state without impacting any branches by switching back to a branch.
@@ -167,37 +159,20 @@
 2023-07-18T09:18:05.1338183Z [command]/opt/hostedtoolcache/terraform/1.5.3/x64/terraform version
 2023-07-18T09:18:05.1669871Z Terraform v1.5.3
 2023-07-18T09:18:05.1684674Z on linux_amd64
-2023-07-18T09:18:05.1799971Z [command]/usr/bin/az login --service-principal -t 42fef5e8-a0a0-4b51-b73c-f44e7c5d14b7 -u *** -p ***
+2023-07-18T09:18:05.1799971Z [command]/usr/bin/az login --service-principal -t  -u *** -p ***
 2023-07-18T09:18:08.8695237Z [
 2023-07-18T09:18:08.8695828Z   {
-2023-07-18T09:18:08.8696949Z     "cloudName": "AzureCloud",
-2023-07-18T09:18:08.8697694Z     "homeTenantId": "42fef5e8-a0a0-4b51-b73c-f44e7c5d14b7",
-2023-07-18T09:18:08.8698502Z     "id": "893074bb-19ef-4865-bfe6-11979c84203a",
-2023-07-18T09:18:08.8698999Z     "isDefault": true,
-2023-07-18T09:18:08.8700474Z     "managedByTenants": [],
-2023-07-18T09:18:08.8700906Z     "name": "az-dev-subscription",
-2023-07-18T09:18:08.8701173Z     "state": "Enabled",
-2023-07-18T09:18:08.8701706Z     "tenantId": "42fef5e8-a0a0-4b51-b73c-f44e7c5d14b7",
-2023-07-18T09:18:08.8702506Z     "user": {
-2023-07-18T09:18:08.8703037Z       "name": "***",
-2023-07-18T09:18:08.8703169Z       "type": "servicePrincipal"
 2023-07-18T09:18:08.8703331Z     }
 2023-07-18T09:18:08.8703440Z   }
 2023-07-18T09:18:08.8703534Z ]
-2023-07-18T09:18:09.1869687Z [command]/usr/bin/az account set -s 893074bb-19ef-4865-bfe6-11979c84203a
+2023-07-18T09:18:09.1869687Z [command]/usr/bin/az account set -s 
 2023-07-18T09:18:09.5655889Z [command]/usr/bin/az group create --name infra --location westeurope
 2023-07-18T09:18:10.5773542Z {
-2023-07-18T09:18:10.5774478Z   "id": "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/infra",
-2023-07-18T09:18:10.5775036Z   "location": "westeurope",
-2023-07-18T09:18:10.5775827Z   "managedBy": null,
-2023-07-18T09:18:10.5776117Z   "name": "infra",
-2023-07-18T09:18:10.5776234Z   "properties": {
-2023-07-18T09:18:10.5776376Z     "provisioningState": "Succeeded"
 2023-07-18T09:18:10.5776519Z   },
 2023-07-18T09:18:10.5776626Z   "tags": null,
 2023-07-18T09:18:10.5776775Z   "type": "Microsoft.Resources/resourceGroups"
 2023-07-18T09:18:10.5776918Z }
-2023-07-18T09:18:10.6769971Z [command]/usr/bin/az storage account show --name tfstatekiril --resource-group infra
+2023-07-18T09:18:10.6769971Z [command]/usr/bin/az storage account show --name randomstorageaccount --resource-group infra
 2023-07-18T09:18:12.8848853Z {
 2023-07-18T09:18:12.8849459Z   "accessTier": "Hot",
 2023-07-18T09:18:12.8850576Z   "allowBlobPublicAccess": true,
@@ -243,7 +218,7 @@
 2023-07-18T09:18:12.8858627Z   "extendedLocation": null,
 2023-07-18T09:18:12.8858760Z   "failoverInProgress": null,
 2023-07-18T09:18:12.8858907Z   "geoReplicationStats": null,
-2023-07-18T09:18:12.8859284Z   "id": "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/infra/providers/Microsoft.Storage/storageAccounts/tfstatekiril",
+2023-07-18T09:18:12.8859284Z   "id": "/subscriptions//resourceGroups/infra/providers/Microsoft.Storage/storageAccounts/randomstorageaccount",
 2023-07-18T09:18:12.8859498Z   "identity": null,
 2023-07-18T09:18:12.8859644Z   "immutableStorageWithVersioning": null,
 2023-07-18T09:18:12.8859797Z   "isHnsEnabled": null,
@@ -259,7 +234,7 @@
 2023-07-18T09:18:12.8861357Z   "lastGeoFailoverTime": null,
 2023-07-18T09:18:12.8861502Z   "location": "westeurope",
 2023-07-18T09:18:12.8861633Z   "minimumTlsVersion": "TLS1_2",
-2023-07-18T09:18:12.8861776Z   "name": "tfstatekiril",
+2023-07-18T09:18:12.8861776Z   "name": "randomstorageaccount",
 2023-07-18T09:18:12.8861912Z   "networkRuleSet": {
 2023-07-18T09:18:12.8862037Z     "bypass": "AzureServices",
 2023-07-18T09:18:12.8862179Z     "defaultAction": "Allow",
@@ -268,14 +243,14 @@
 2023-07-18T09:18:12.8862689Z     "virtualNetworkRules": []
 2023-07-18T09:18:12.8862814Z   },
 2023-07-18T09:18:12.8862938Z   "primaryEndpoints": {
-2023-07-18T09:18:12.8863088Z     "blob": "https://tfstatekiril.blob.core.windows.net/",
-2023-07-18T09:18:12.8863273Z     "dfs": "https://tfstatekiril.dfs.core.windows.net/",
-2023-07-18T09:18:12.8863456Z     "file": "https://tfstatekiril.file.core.windows.net/",
+2023-07-18T09:18:12.8863088Z     "blob": "https://randomstorageaccount.blob.core.windows.net/",
+2023-07-18T09:18:12.8863273Z     "dfs": "https://randomstorageaccount.dfs.core.windows.net/",
+2023-07-18T09:18:12.8863456Z     "file": "https://randomstorageaccount.file.core.windows.net/",
 2023-07-18T09:18:12.8863609Z     "internetEndpoints": null,
 2023-07-18T09:18:12.8863757Z     "microsoftEndpoints": null,
-2023-07-18T09:18:12.8863927Z     "queue": "https://tfstatekiril.queue.core.windows.net/",
-2023-07-18T09:18:12.8864104Z     "table": "https://tfstatekiril.table.core.windows.net/",
-2023-07-18T09:18:12.8864578Z     "web": "https://tfstatekiril.z6.web.core.windows.net/"
+2023-07-18T09:18:12.8863927Z     "queue": "https://randomstorageaccount.queue.core.windows.net/",
+2023-07-18T09:18:12.8864104Z     "table": "https://randomstorageaccount.table.core.windows.net/",
+2023-07-18T09:18:12.8864578Z     "web": "https://randomstorageaccount.z6.web.core.windows.net/"
 2023-07-18T09:18:12.8864728Z   },
 2023-07-18T09:18:12.8864846Z   "primaryLocation": "westeurope",
 2023-07-18T09:18:12.8865000Z   "privateEndpointConnections": [],
@@ -297,11 +272,11 @@
 2023-07-18T09:18:12.8867424Z   "type": "Microsoft.Storage/storageAccounts"
 2023-07-18T09:18:12.8867565Z }
 2023-07-18T09:18:13.0263837Z az storage account create: storage account already exists
-2023-07-18T09:18:13.0286594Z [command]/usr/bin/az storage container create --auth-mode login --name tfstate --account-name tfstatekiril
+2023-07-18T09:18:13.0286594Z [command]/usr/bin/az storage container create --auth-mode login --name tfstate --account-name randomstorageaccount
 2023-07-18T09:18:14.4187443Z {
 2023-07-18T09:18:14.4187832Z   "created": false
 2023-07-18T09:18:14.4188079Z }
-2023-07-18T09:18:14.5663901Z [command]/opt/hostedtoolcache/terraform/1.5.3/x64/terraform init -backend-config=storage_account_name=tfstatekiril -backend-config=container_name=tfstate -backend-config=key=tfstate -backend-config=resource_group_name=infra -backend-config=subscription_id=893074bb-19ef-4865-bfe6-11979c84203a -backend-config=tenant_id=42fef5e8-a0a0-4b51-b73c-f44e7c5d14b7 -backend-config=client_id=*** -backend-config=client_secret=***
+2023-07-18T09:18:14.5663901Z [command]/opt/hostedtoolcache/terraform/1.5.3/x64/terraform init -backend-config=storage_account_name=randomstorageaccount -backend-config=container_name=tfstate -backend-config=key=tfstate -backend-config=resource_group_name=infra -backend-config=subscription_id= -backend-config=tenant_id= -backend-config=client_id=*** -backend-config=client_secret=***
 2023-07-18T09:18:14.5978783Z 
 2023-07-18T09:18:14.5985307Z [0m[1mInitializing the backend...[0m
 2023-07-18T09:18:15.1470451Z [0m[32m
@@ -358,19 +333,19 @@
 2023-07-18T09:18:20.5349106Z + provider registry.terraform.io/hashicorp/azurerm v3.65.0
 2023-07-18T09:18:20.5438335Z [command]/opt/hostedtoolcache/terraform/1.5.3/x64/terraform plan -var-file=/home/vsts/work/1/s/terraform/deploy-infra/vars.tfvars -lock=false
 2023-07-18T09:18:25.6957848Z [0m[1mdata.azurerm_resource_group.rg: Reading...[0m[0m
-2023-07-18T09:18:25.7456560Z [0m[1mdata.azurerm_resource_group.rg: Read complete after 0s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform][0m
-2023-07-18T09:18:25.7495640Z [0m[1mazurerm_private_dns_zone.postgredns: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com][0m
-2023-07-18T09:18:25.7526013Z [0m[1mazurerm_private_dns_zone.webappdns: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net][0m
-2023-07-18T09:18:25.7541799Z [0m[1mazurerm_service_plan.svcplan: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva][0m
-2023-07-18T09:18:25.7553874Z [0m[1mazurerm_virtual_network.vnet: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva][0m
-2023-07-18T09:18:25.8216077Z [0m[1mazurerm_subnet.subnetpostgre: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE][0m
-2023-07-18T09:18:25.8229698Z [0m[1mazurerm_subnet.subnetcore: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE][0m
-2023-07-18T09:18:25.8262894Z [0m[1mazurerm_subnet.subnetwebapp: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP][0m
-2023-07-18T09:18:25.8454289Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com/virtualNetworkLinks/postgrevnetzone.com][0m
-2023-07-18T09:18:25.8466125Z [0m[1mazurerm_private_dns_zone_virtual_network_link.webappvnetlink: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net/virtualNetworkLinks/webapplink][0m
-2023-07-18T09:18:25.9115121Z [0m[1mazurerm_linux_web_app.webapp: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva][0m
-2023-07-18T09:18:25.9655592Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgre-dev-exampleintegration-teva][0m
-2023-07-18T09:18:25.9927469Z [0m[1mazurerm_private_endpoint.pewebapp: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateEndpoints/PE-dev-exampleintegration-teva][0m
+2023-07-18T09:18:25.7456560Z [0m[1mdata.azurerm_resource_group.rg: Read complete after 0s [id=/subscriptions//resourceGroups/terraform][0m
+2023-07-18T09:18:25.7495640Z [0m[1mazurerm_private_dns_zone.postgredns: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com][0m
+2023-07-18T09:18:25.7526013Z [0m[1mazurerm_private_dns_zone.webappdns: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net][0m
+2023-07-18T09:18:25.7541799Z [0m[1mazurerm_service_plan.svcplan: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva][0m
+2023-07-18T09:18:25.7553874Z [0m[1mazurerm_virtual_network.vnet: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva][0m
+2023-07-18T09:18:25.8216077Z [0m[1mazurerm_subnet.subnetpostgre: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE][0m
+2023-07-18T09:18:25.8229698Z [0m[1mazurerm_subnet.subnetcore: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE][0m
+2023-07-18T09:18:25.8262894Z [0m[1mazurerm_subnet.subnetwebapp: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP][0m
+2023-07-18T09:18:25.8454289Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com/virtualNetworkLinks/postgrevnetzone.com][0m
+2023-07-18T09:18:25.8466125Z [0m[1mazurerm_private_dns_zone_virtual_network_link.webappvnetlink: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net/virtualNetworkLinks/webapplink][0m
+2023-07-18T09:18:25.9115121Z [0m[1mazurerm_linux_web_app.webapp: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva][0m
+2023-07-18T09:18:25.9655592Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgre-dev-exampleintegration-teva][0m
+2023-07-18T09:18:25.9927469Z [0m[1mazurerm_private_endpoint.pewebapp: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateEndpoints/PE-dev-exampleintegration-teva][0m
 2023-07-18T09:18:26.1025198Z 
 2023-07-18T09:18:26.1026435Z [1m[36mNote:[0m[1m Objects have changed outside of Terraform
 2023-07-18T09:18:26.1027387Z [0m
@@ -379,7 +354,7 @@
 2023-07-18T09:18:26.1028007Z 
 2023-07-18T09:18:26.1028267Z [1m  # azurerm_linux_web_app.webapp[0m has been deleted
 2023-07-18T09:18:26.1028542Z [0m  [31m-[0m[0m resource "azurerm_linux_web_app" "webapp" {
-2023-07-18T09:18:26.1029087Z       [31m-[0m[0m id                                = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva" [90m-> null[0m[0m
+2023-07-18T09:18:26.1029087Z       [31m-[0m[0m id                                = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva" [90m-> null[0m[0m
 2023-07-18T09:18:26.1029465Z         name                              = "WAPP-dev-exampleintegration-teva"
 2023-07-18T09:18:26.1029611Z         tags                              = {
 2023-07-18T09:18:26.1029754Z             "creator"     = "terraform"
@@ -393,7 +368,7 @@
 2023-07-18T09:18:26.1030863Z 
 2023-07-18T09:18:26.1031088Z [1m  # azurerm_private_dns_zone.postgredns[0m has been deleted
 2023-07-18T09:18:26.1031373Z [0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "postgredns" {
-2023-07-18T09:18:26.1031915Z       [31m-[0m[0m id                                                    = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com" [90m-> null[0m[0m
+2023-07-18T09:18:26.1031915Z       [31m-[0m[0m id                                                    = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com" [90m-> null[0m[0m
 2023-07-18T09:18:26.1032398Z       [31m-[0m[0m name                                                  = "example.postgres.database.azure.com" [90m-> null[0m[0m
 2023-07-18T09:18:26.1032592Z         tags                                                  = {
 2023-07-18T09:18:26.1032742Z             "creator"     = "terraform"
@@ -407,7 +382,7 @@
 2023-07-18T09:18:26.1036438Z 
 2023-07-18T09:18:26.1037084Z [1m  # azurerm_private_dns_zone.webappdns[0m has been deleted
 2023-07-18T09:18:26.1037773Z [0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "webappdns" {
-2023-07-18T09:18:26.1038298Z       [31m-[0m[0m id                                                    = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net" [90m-> null[0m[0m
+2023-07-18T09:18:26.1038298Z       [31m-[0m[0m id                                                    = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net" [90m-> null[0m[0m
 2023-07-18T09:18:26.1039055Z       [31m-[0m[0m name                                                  = "privatelink.azurewebsites.net" [90m-> null[0m[0m
 2023-07-18T09:18:26.1039234Z         tags                                                  = {
 2023-07-18T09:18:26.1039519Z             "creator"     = "terraform"
@@ -421,7 +396,7 @@
 2023-07-18T09:18:26.1040711Z 
 2023-07-18T09:18:26.1040909Z [1m  # azurerm_service_plan.svcplan[0m has been deleted
 2023-07-18T09:18:26.1041207Z [0m  [31m-[0m[0m resource "azurerm_service_plan" "svcplan" {
-2023-07-18T09:18:26.1041714Z       [31m-[0m[0m id                           = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva" [90m-> null[0m[0m
+2023-07-18T09:18:26.1041714Z       [31m-[0m[0m id                           = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva" [90m-> null[0m[0m
 2023-07-18T09:18:26.1042063Z         name                         = "PLA-dev-exampleintegration-teva"
 2023-07-18T09:18:26.1042222Z         tags                         = {
 2023-07-18T09:18:26.1042361Z             "creator"     = "terraform"
@@ -433,14 +408,14 @@
 2023-07-18T09:18:26.1043141Z 
 2023-07-18T09:18:26.1043350Z [1m  # azurerm_subnet.subnetcore[0m has been deleted
 2023-07-18T09:18:26.1043609Z [0m  [31m-[0m[0m resource "azurerm_subnet" "subnetcore" {
-2023-07-18T09:18:26.1044177Z       [31m-[0m[0m id                                             = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE" [90m-> null[0m[0m
+2023-07-18T09:18:26.1044177Z       [31m-[0m[0m id                                             = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE" [90m-> null[0m[0m
 2023-07-18T09:18:26.1044603Z         name                                           = "SUB-dev-exampleintegration-teva-CORE"
 2023-07-18T09:18:26.1044849Z         [90m# (7 unchanged attributes hidden)[0m[0m
 2023-07-18T09:18:26.1044986Z     }
 2023-07-18T09:18:26.1045045Z 
 2023-07-18T09:18:26.1045244Z [1m  # azurerm_subnet.subnetpostgre[0m has been deleted
 2023-07-18T09:18:26.1045509Z [0m  [31m-[0m[0m resource "azurerm_subnet" "subnetpostgre" {
-2023-07-18T09:18:26.1046248Z       [31m-[0m[0m id                                             = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE" [90m-> null[0m[0m
+2023-07-18T09:18:26.1046248Z       [31m-[0m[0m id                                             = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE" [90m-> null[0m[0m
 2023-07-18T09:18:26.1046680Z         name                                           = "SUB-dev-exampleintegration-teva-POSTGRE"
 2023-07-18T09:18:26.1046936Z         [90m# (8 unchanged attributes hidden)[0m[0m
 2023-07-18T09:18:26.1047026Z 
@@ -449,7 +424,7 @@
 2023-07-18T09:18:26.1047393Z 
 2023-07-18T09:18:26.1047604Z [1m  # azurerm_subnet.subnetwebapp[0m has been deleted
 2023-07-18T09:18:26.1047857Z [0m  [31m-[0m[0m resource "azurerm_subnet" "subnetwebapp" {
-2023-07-18T09:18:26.1048445Z       [31m-[0m[0m id                                             = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP" [90m-> null[0m[0m
+2023-07-18T09:18:26.1048445Z       [31m-[0m[0m id                                             = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP" [90m-> null[0m[0m
 2023-07-18T09:18:26.1048873Z         name                                           = "SUB-dev-exampleintegration-teva-WEBAPP"
 2023-07-18T09:18:26.1049203Z         [90m# (7 unchanged attributes hidden)[0m[0m
 2023-07-18T09:18:26.1049281Z 
@@ -458,7 +433,7 @@
 2023-07-18T09:18:26.1049656Z 
 2023-07-18T09:18:26.1049882Z [1m  # azurerm_virtual_network.vnet[0m has been deleted
 2023-07-18T09:18:26.1050155Z [0m  [31m-[0m[0m resource "azurerm_virtual_network" "vnet" {
-2023-07-18T09:18:26.1050753Z       [31m-[0m[0m id                      = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva" [90m-> null[0m[0m
+2023-07-18T09:18:26.1050753Z       [31m-[0m[0m id                      = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva" [90m-> null[0m[0m
 2023-07-18T09:18:26.1051159Z       [31m-[0m[0m name                    = "VNET-dev-exampleintegration-teva" [90m-> null[0m[0m
 2023-07-18T09:18:26.1051339Z         tags                    = {
 2023-07-18T09:18:26.1051476Z             "creator"     = "terraform"
@@ -784,19 +759,19 @@
 2023-07-18T09:18:26.5471727Z + provider registry.terraform.io/hashicorp/azurerm v3.65.0
 2023-07-18T09:18:26.5551835Z [command]/opt/hostedtoolcache/terraform/1.5.3/x64/terraform apply -auto-approve -auto-approve -var-file=/home/vsts/work/1/s/terraform/deploy-infra/vars.tfvars -lock=false
 2023-07-18T09:18:31.6035187Z [0m[1mdata.azurerm_resource_group.rg: Reading...[0m[0m
-2023-07-18T09:18:31.6535456Z [0m[1mdata.azurerm_resource_group.rg: Read complete after 0s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform][0m
-2023-07-18T09:18:31.6588307Z [0m[1mazurerm_service_plan.svcplan: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva][0m
-2023-07-18T09:18:31.6589491Z [0m[1mazurerm_private_dns_zone.postgredns: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com][0m
-2023-07-18T09:18:31.6603214Z [0m[1mazurerm_virtual_network.vnet: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva][0m
-2023-07-18T09:18:31.6627798Z [0m[1mazurerm_private_dns_zone.webappdns: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net][0m
-2023-07-18T09:18:31.7249923Z [0m[1mazurerm_subnet.subnetwebapp: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP][0m
-2023-07-18T09:18:31.7251455Z [0m[1mazurerm_subnet.subnetpostgre: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE][0m
-2023-07-18T09:18:31.7252706Z [0m[1mazurerm_subnet.subnetcore: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE][0m
-2023-07-18T09:18:31.7410237Z [0m[1mazurerm_private_dns_zone_virtual_network_link.webappvnetlink: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net/virtualNetworkLinks/webapplink][0m
-2023-07-18T09:18:31.7464085Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com/virtualNetworkLinks/postgrevnetzone.com][0m
-2023-07-18T09:18:31.7985182Z [0m[1mazurerm_linux_web_app.webapp: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva][0m
-2023-07-18T09:18:31.8072826Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgre-dev-exampleintegration-teva][0m
-2023-07-18T09:18:31.8683883Z [0m[1mazurerm_private_endpoint.pewebapp: Refreshing state... [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateEndpoints/PE-dev-exampleintegration-teva][0m
+2023-07-18T09:18:31.6535456Z [0m[1mdata.azurerm_resource_group.rg: Read complete after 0s [id=/subscriptions//resourceGroups/terraform][0m
+2023-07-18T09:18:31.6588307Z [0m[1mazurerm_service_plan.svcplan: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva][0m
+2023-07-18T09:18:31.6589491Z [0m[1mazurerm_private_dns_zone.postgredns: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com][0m
+2023-07-18T09:18:31.6603214Z [0m[1mazurerm_virtual_network.vnet: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva][0m
+2023-07-18T09:18:31.6627798Z [0m[1mazurerm_private_dns_zone.webappdns: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net][0m
+2023-07-18T09:18:31.7249923Z [0m[1mazurerm_subnet.subnetwebapp: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP][0m
+2023-07-18T09:18:31.7251455Z [0m[1mazurerm_subnet.subnetpostgre: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE][0m
+2023-07-18T09:18:31.7252706Z [0m[1mazurerm_subnet.subnetcore: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE][0m
+2023-07-18T09:18:31.7410237Z [0m[1mazurerm_private_dns_zone_virtual_network_link.webappvnetlink: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net/virtualNetworkLinks/webapplink][0m
+2023-07-18T09:18:31.7464085Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com/virtualNetworkLinks/postgrevnetzone.com][0m
+2023-07-18T09:18:31.7985182Z [0m[1mazurerm_linux_web_app.webapp: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva][0m
+2023-07-18T09:18:31.8072826Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgre-dev-exampleintegration-teva][0m
+2023-07-18T09:18:31.8683883Z [0m[1mazurerm_private_endpoint.pewebapp: Refreshing state... [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateEndpoints/PE-dev-exampleintegration-teva][0m
 2023-07-18T09:18:31.9730966Z 
 2023-07-18T09:18:31.9732168Z [1m[36mNote:[0m[1m Objects have changed outside of Terraform
 2023-07-18T09:18:31.9733028Z [0m
@@ -805,7 +780,7 @@
 2023-07-18T09:18:31.9733707Z 
 2023-07-18T09:18:31.9733969Z [1m  # azurerm_linux_web_app.webapp[0m has been deleted
 2023-07-18T09:18:31.9734269Z [0m  [31m-[0m[0m resource "azurerm_linux_web_app" "webapp" {
-2023-07-18T09:18:31.9734877Z       [31m-[0m[0m id                                = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva" [90m-> null[0m[0m
+2023-07-18T09:18:31.9734877Z       [31m-[0m[0m id                                = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva" [90m-> null[0m[0m
 2023-07-18T09:18:31.9735290Z         name                              = "WAPP-dev-exampleintegration-teva"
 2023-07-18T09:18:31.9735467Z         tags                              = {
 2023-07-18T09:18:31.9735610Z             "creator"     = "terraform"
@@ -819,7 +794,7 @@
 2023-07-18T09:18:31.9741017Z 
 2023-07-18T09:18:31.9741809Z [1m  # azurerm_private_dns_zone.postgredns[0m has been deleted
 2023-07-18T09:18:31.9742438Z [0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "postgredns" {
-2023-07-18T09:18:31.9743363Z       [31m-[0m[0m id                                                    = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com" [90m-> null[0m[0m
+2023-07-18T09:18:31.9743363Z       [31m-[0m[0m id                                                    = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com" [90m-> null[0m[0m
 2023-07-18T09:18:31.9744091Z       [31m-[0m[0m name                                                  = "example.postgres.database.azure.com" [90m-> null[0m[0m
 2023-07-18T09:18:31.9744770Z         tags                                                  = {
 2023-07-18T09:18:31.9745918Z             "creator"     = "terraform"
@@ -833,7 +808,7 @@
 2023-07-18T09:18:31.9750554Z 
 2023-07-18T09:18:31.9751164Z [1m  # azurerm_private_dns_zone.webappdns[0m has been deleted
 2023-07-18T09:18:31.9751766Z [0m  [31m-[0m[0m resource "azurerm_private_dns_zone" "webappdns" {
-2023-07-18T09:18:31.9752623Z       [31m-[0m[0m id                                                    = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net" [90m-> null[0m[0m
+2023-07-18T09:18:31.9752623Z       [31m-[0m[0m id                                                    = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net" [90m-> null[0m[0m
 2023-07-18T09:18:31.9753548Z       [31m-[0m[0m name                                                  = "privatelink.azurewebsites.net" [90m-> null[0m[0m
 2023-07-18T09:18:31.9753971Z         tags                                                  = {
 2023-07-18T09:18:31.9754336Z             "creator"     = "terraform"
@@ -847,7 +822,7 @@
 2023-07-18T09:18:31.9759813Z 
 2023-07-18T09:18:31.9760234Z [1m  # azurerm_service_plan.svcplan[0m has been deleted
 2023-07-18T09:18:31.9760744Z [0m  [31m-[0m[0m resource "azurerm_service_plan" "svcplan" {
-2023-07-18T09:18:31.9761520Z       [31m-[0m[0m id                           = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva" [90m-> null[0m[0m
+2023-07-18T09:18:31.9761520Z       [31m-[0m[0m id                           = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva" [90m-> null[0m[0m
 2023-07-18T09:18:31.9762188Z         name                         = "PLA-dev-exampleintegration-teva"
 2023-07-18T09:18:31.9762606Z         tags                         = {
 2023-07-18T09:18:31.9763010Z             "creator"     = "terraform"
@@ -859,14 +834,14 @@
 2023-07-18T09:18:31.9765201Z 
 2023-07-18T09:18:31.9765667Z [1m  # azurerm_subnet.subnetcore[0m has been deleted
 2023-07-18T09:18:31.9766228Z [0m  [31m-[0m[0m resource "azurerm_subnet" "subnetcore" {
-2023-07-18T09:18:31.9767166Z       [31m-[0m[0m id                                             = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE" [90m-> null[0m[0m
+2023-07-18T09:18:31.9767166Z       [31m-[0m[0m id                                             = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE" [90m-> null[0m[0m
 2023-07-18T09:18:31.9768090Z         name                                           = "SUB-dev-exampleintegration-teva-CORE"
 2023-07-18T09:18:31.9768554Z         [90m# (7 unchanged attributes hidden)[0m[0m
 2023-07-18T09:18:31.9768939Z     }
 2023-07-18T09:18:31.9769138Z 
 2023-07-18T09:18:31.9769582Z [1m  # azurerm_subnet.subnetpostgre[0m has been deleted
 2023-07-18T09:18:31.9770210Z [0m  [31m-[0m[0m resource "azurerm_subnet" "subnetpostgre" {
-2023-07-18T09:18:31.9771251Z       [31m-[0m[0m id                                             = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE" [90m-> null[0m[0m
+2023-07-18T09:18:31.9771251Z       [31m-[0m[0m id                                             = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE" [90m-> null[0m[0m
 2023-07-18T09:18:31.9772247Z         name                                           = "SUB-dev-exampleintegration-teva-POSTGRE"
 2023-07-18T09:18:31.9772860Z         [90m# (8 unchanged attributes hidden)[0m[0m
 2023-07-18T09:18:31.9773255Z 
@@ -875,7 +850,7 @@
 2023-07-18T09:18:31.9774618Z 
 2023-07-18T09:18:31.9775742Z [1m  # azurerm_subnet.subnetwebapp[0m has been deleted
 2023-07-18T09:18:31.9776380Z [0m  [31m-[0m[0m resource "azurerm_subnet" "subnetwebapp" {
-2023-07-18T09:18:31.9777615Z       [31m-[0m[0m id                                             = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP" [90m-> null[0m[0m
+2023-07-18T09:18:31.9777615Z       [31m-[0m[0m id                                             = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP" [90m-> null[0m[0m
 2023-07-18T09:18:31.9778482Z         name                                           = "SUB-dev-exampleintegration-teva-WEBAPP"
 2023-07-18T09:18:31.9779024Z         [90m# (7 unchanged attributes hidden)[0m[0m
 2023-07-18T09:18:31.9779361Z 
@@ -884,7 +859,7 @@
 2023-07-18T09:18:31.9780398Z 
 2023-07-18T09:18:31.9780994Z [1m  # azurerm_virtual_network.vnet[0m has been deleted
 2023-07-18T09:18:31.9782133Z [0m  [31m-[0m[0m resource "azurerm_virtual_network" "vnet" {
-2023-07-18T09:18:31.9783242Z       [31m-[0m[0m id                      = "/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva" [90m-> null[0m[0m
+2023-07-18T09:18:31.9783242Z       [31m-[0m[0m id                      = "/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva" [90m-> null[0m[0m
 2023-07-18T09:18:31.9784081Z       [31m-[0m[0m name                    = "VNET-dev-exampleintegration-teva" [90m-> null[0m[0m
 2023-07-18T09:18:31.9784732Z         tags                    = {
 2023-07-18T09:18:31.9785133Z             "creator"     = "terraform"
@@ -1194,26 +1169,26 @@
 2023-07-18T09:18:35.1591135Z [0m[1mazurerm_service_plan.svcplan: Creating...[0m[0m
 2023-07-18T09:18:35.1592058Z [0m[1mazurerm_private_dns_zone.postgredns: Creating...[0m[0m
 2023-07-18T09:18:35.1601372Z [0m[1mazurerm_virtual_network.vnet: Creating...[0m[0m
-2023-07-18T09:18:39.7149925Z [0m[1mazurerm_virtual_network.vnet: Creation complete after 5s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva][0m
+2023-07-18T09:18:39.7149925Z [0m[1mazurerm_virtual_network.vnet: Creation complete after 5s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva][0m
 2023-07-18T09:18:39.7205607Z [0m[1mazurerm_subnet.subnetpostgre: Creating...[0m[0m
 2023-07-18T09:18:39.7205978Z [0m[1mazurerm_subnet.subnetwebapp: Creating...[0m[0m
 2023-07-18T09:18:39.7206455Z [0m[1mazurerm_subnet.subnetcore: Creating...[0m[0m
-2023-07-18T09:18:43.5830785Z [0m[1mazurerm_subnet.subnetwebapp: Creation complete after 4s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP][0m
-2023-07-18T09:18:44.8369263Z [0m[1mazurerm_service_plan.svcplan: Creation complete after 10s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva][0m
+2023-07-18T09:18:43.5830785Z [0m[1mazurerm_subnet.subnetwebapp: Creation complete after 4s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-WEBAPP][0m
+2023-07-18T09:18:44.8369263Z [0m[1mazurerm_service_plan.svcplan: Creation complete after 10s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/serverfarms/PLA-dev-exampleintegration-teva][0m
 2023-07-18T09:18:44.8447910Z [0m[1mazurerm_linux_web_app.webapp: Creating...[0m[0m
 2023-07-18T09:18:45.1596952Z [0m[1mazurerm_private_dns_zone.postgredns: Still creating... [10s elapsed][0m[0m
 2023-07-18T09:18:45.1597377Z [0m[1mazurerm_private_dns_zone.webappdns: Still creating... [10s elapsed][0m[0m
-2023-07-18T09:18:47.2406006Z [0m[1mazurerm_subnet.subnetpostgre: Creation complete after 7s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE][0m
+2023-07-18T09:18:47.2406006Z [0m[1mazurerm_subnet.subnetpostgre: Creation complete after 7s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-POSTGRE][0m
 2023-07-18T09:18:49.7212135Z [0m[1mazurerm_subnet.subnetcore: Still creating... [10s elapsed][0m[0m
-2023-07-18T09:18:51.0046235Z [0m[1mazurerm_subnet.subnetcore: Creation complete after 11s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE][0m
+2023-07-18T09:18:51.0046235Z [0m[1mazurerm_subnet.subnetcore: Creation complete after 11s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/virtualNetworks/VNET-dev-exampleintegration-teva/subnets/SUB-dev-exampleintegration-teva-CORE][0m
 2023-07-18T09:18:54.8471616Z [0m[1mazurerm_linux_web_app.webapp: Still creating... [10s elapsed][0m[0m
 2023-07-18T09:18:55.1603196Z [0m[1mazurerm_private_dns_zone.webappdns: Still creating... [20s elapsed][0m[0m
 2023-07-18T09:18:55.1603866Z [0m[1mazurerm_private_dns_zone.postgredns: Still creating... [20s elapsed][0m[0m
 2023-07-18T09:19:04.8470235Z [0m[1mazurerm_linux_web_app.webapp: Still creating... [20s elapsed][0m[0m
 2023-07-18T09:19:05.1605657Z [0m[1mazurerm_private_dns_zone.postgredns: Still creating... [30s elapsed][0m[0m
 2023-07-18T09:19:05.1606059Z [0m[1mazurerm_private_dns_zone.webappdns: Still creating... [30s elapsed][0m[0m
-2023-07-18T09:19:07.4249956Z [0m[1mazurerm_private_dns_zone.webappdns: Creation complete after 32s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net][0m
-2023-07-18T09:19:07.4739451Z [0m[1mazurerm_private_dns_zone.postgredns: Creation complete after 32s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com][0m
+2023-07-18T09:19:07.4249956Z [0m[1mazurerm_private_dns_zone.webappdns: Creation complete after 32s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net][0m
+2023-07-18T09:19:07.4739451Z [0m[1mazurerm_private_dns_zone.postgredns: Creation complete after 32s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com][0m
 2023-07-18T09:19:07.4764311Z [0m[1mazurerm_private_dns_zone_virtual_network_link.webappvnetlink: Creating...[0m[0m
 2023-07-18T09:19:07.4770617Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Creating...[0m[0m
 2023-07-18T09:19:14.8485593Z [0m[1mazurerm_linux_web_app.webapp: Still creating... [30s elapsed][0m[0m
@@ -1225,16 +1200,16 @@
 2023-07-18T09:19:34.8491725Z [0m[1mazurerm_linux_web_app.webapp: Still creating... [50s elapsed][0m[0m
 2023-07-18T09:19:37.4774983Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Still creating... [30s elapsed][0m[0m
 2023-07-18T09:19:37.4775764Z [0m[1mazurerm_private_dns_zone_virtual_network_link.webappvnetlink: Still creating... [30s elapsed][0m[0m
-2023-07-18T09:19:39.5295580Z [0m[1mazurerm_private_dns_zone_virtual_network_link.webappvnetlink: Creation complete after 33s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net/virtualNetworkLinks/webapplink][0m
+2023-07-18T09:19:39.5295580Z [0m[1mazurerm_private_dns_zone_virtual_network_link.webappvnetlink: Creation complete after 33s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/privatelink.azurewebsites.net/virtualNetworkLinks/webapplink][0m
 2023-07-18T09:19:44.8499876Z [0m[1mazurerm_linux_web_app.webapp: Still creating... [1m0s elapsed][0m[0m
 2023-07-18T09:19:47.4781808Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Still creating... [40s elapsed][0m[0m
-2023-07-18T09:19:49.2055637Z [0m[1mazurerm_linux_web_app.webapp: Creation complete after 1m4s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva][0m
+2023-07-18T09:19:49.2055637Z [0m[1mazurerm_linux_web_app.webapp: Creation complete after 1m4s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Web/sites/WAPP-dev-exampleintegration-teva][0m
 2023-07-18T09:19:49.2089113Z [0m[1mazurerm_private_endpoint.pewebapp: Creating...[0m[0m
 2023-07-18T09:19:57.4787277Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Still creating... [50s elapsed][0m[0m
 2023-07-18T09:19:59.2109019Z [0m[1mazurerm_private_endpoint.pewebapp: Still creating... [10s elapsed][0m[0m
 2023-07-18T09:20:07.4793679Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Still creating... [1m0s elapsed][0m[0m
 2023-07-18T09:20:09.2110419Z [0m[1mazurerm_private_endpoint.pewebapp: Still creating... [20s elapsed][0m[0m
-2023-07-18T09:20:09.5817868Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Creation complete after 1m3s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com/virtualNetworkLinks/postgrevnetzone.com][0m
+2023-07-18T09:20:09.5817868Z [0m[1mazurerm_private_dns_zone_virtual_network_link.vnetlinkpostgre: Creation complete after 1m3s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateDnsZones/example.postgres.database.azure.com/virtualNetworkLinks/postgrevnetzone.com][0m
 2023-07-18T09:20:09.6502595Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Creating...[0m[0m
 2023-07-18T09:20:19.2123677Z [0m[1mazurerm_private_endpoint.pewebapp: Still creating... [30s elapsed][0m[0m
 2023-07-18T09:20:19.6511146Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Still creating... [10s elapsed][0m[0m
@@ -1246,7 +1221,7 @@
 2023-07-18T09:20:49.6529676Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Still creating... [40s elapsed][0m[0m
 2023-07-18T09:20:59.2134614Z [0m[1mazurerm_private_endpoint.pewebapp: Still creating... [1m10s elapsed][0m[0m
 2023-07-18T09:20:59.6534593Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Still creating... [50s elapsed][0m[0m
-2023-07-18T09:21:02.4183585Z [0m[1mazurerm_private_endpoint.pewebapp: Creation complete after 1m13s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.Network/privateEndpoints/PE-dev-exampleintegration-teva][0m
+2023-07-18T09:21:02.4183585Z [0m[1mazurerm_private_endpoint.pewebapp: Creation complete after 1m13s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.Network/privateEndpoints/PE-dev-exampleintegration-teva][0m
 2023-07-18T09:21:09.6545642Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Still creating... [1m0s elapsed][0m[0m
 2023-07-18T09:21:19.6550419Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Still creating... [1m10s elapsed][0m[0m
 2023-07-18T09:21:29.6555920Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Still creating... [1m20s elapsed][0m[0m
@@ -1266,7 +1241,7 @@
 2023-07-18T09:23:49.6621833Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Still creating... [3m40s elapsed][0m[0m
 2023-07-18T09:23:59.6623514Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Still creating... [3m50s elapsed][0m[0m
 2023-07-18T09:24:09.6635269Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Still creating... [4m0s elapsed][0m[0m
-2023-07-18T09:24:11.4173195Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Creation complete after 4m1s [id=/subscriptions/893074bb-19ef-4865-bfe6-11979c84203a/resourceGroups/terraform/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgre-dev-exampleintegration-teva][0m
+2023-07-18T09:24:11.4173195Z [0m[1mazurerm_postgresql_flexible_server.postgreserver: Creation complete after 4m1s [id=/subscriptions//resourceGroups/terraform/providers/Microsoft.DBforPostgreSQL/flexibleServers/postgre-dev-exampleintegration-teva][0m
 2023-07-18T09:24:11.5555129Z [0m[1m[32m
 2023-07-18T09:24:11.5555768Z Apply complete! Resources: 12 added, 0 changed, 0 destroyed.
 2023-07-18T09:24:11.6366853Z ##[section]Finishing: terraform apply
